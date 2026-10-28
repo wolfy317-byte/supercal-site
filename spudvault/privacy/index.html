@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>SpudVault Privacy Policy</title>
+<link rel="canonical" href="https://supercal.makeyourownlegend.com/spudvault/privacy/">
+<meta name="description" content="How SpudVault handles confirmed password saving and filling using a local Windows vault, without cloud password storage.">
+    <style>:root {
+  --ink: #172b43;
+  --muted: #536578;
+  --green: #21665b;
+  --border: #cbd6e0;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 32px 20px;
+  background: #f6f8fb;
+  color: var(--ink);
+  font:
+    16px/1.6 "Segoe UI",
+    sans-serif;
+}
+main {
+  max-width: 740px;
+  margin: auto;
+  background: white;
+  padding: 32px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+header strong {
+  font-size: 24px;
+}
+header span {
+  display: block;
+  color: var(--green);
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+h1 {
+  font-size: 30px;
+  line-height: 1.25;
+  margin: 28px 0 14px;
+}
+h2 {
+  font-size: 19px;
+  margin: 0 0 12px;
+}
+p {
+  margin: 0 0 18px;
+}
+.intro,
+dd,
+footer {
+  color: var(--muted);
+}
+section {
+  padding: 22px;
+  background: #f6f8fb;
+  border: 1px solid #dce4ec;
+  border-radius: 8px;
+  margin: 22px 0;
+}
+dl {
+  margin: 0;
+}
+dt {
+  font-weight: 600;
+  margin-top: 16px;
+}
+dt:first-child {
+  margin-top: 0;
+}
+dd {
+  margin: 5px 0 0;
+}
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 24px 0 18px;
+}
+button {
+  font:
+    600 14px "Segoe UI",
+    sans-serif;
+  min-height: 44px;
+  padding: 12px 18px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: white;
+  color: var(--ink);
+  cursor: pointer;
+}
+button.primary {
+  color: white;
+  background: var(--green);
+  border-color: var(--green);
+}
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #6197cc;
+  outline-offset: 3px;
+}
+button:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+a {
+  color: var(--green);
+}
+#status {
+  font-weight: 600;
+  color: var(--green);
+}
+footer {
+  font-size: 13px;
+  border-top: 1px solid #dce4ec;
+  padding-top: 18px;
+}
+</style>
+  </head>
+  <body>
+    <main>
+      <header><div><strong>SpudVault</strong><span>LOCAL PASSWORD STORAGE</span></div></header>
+<h1>SpudVault privacy policy</h1>
+<p>Published by <strong>SpudVault</strong>.</p>
+      <p>
+        Effective October 28, 2026. Applies to the SpudVault Firefox extension
+        and its local Windows companion app.
+      </p>
+      <h2>Information used</h2>
+      <p>
+        SpudVault handles usernames, passwords, and the website addresses
+        associated with those logins. The browser extension checks supported
+        login forms to offer saving a submitted login, and matches saved
+        accounts to the current website for confirmed autofill. Browser features
+        are disabled until the user agrees to local data handling.
+      </p>
+      <h2>Saving and filling</h2>
+      <p>
+        Choosing Yes in a save prompt sends the username, password, and website
+        origin to the installed SpudVault app using Firefox Native Messaging on
+        the same computer. Cancelling, declining, or allowing that prompt to
+        expire does not save the proposed login. Account lookup sends the
+        current website origin to that local app and returns matching addresses
+        and usernames without passwords. Only Confirm &amp; fill requests the
+        selected password and fills the website. SpudVault does not
+        automatically submit the form. Filled values are accessible to the
+        selected website, including its scripts and behavior.
+      </p>
+      <h2>Storage and recipients</h2>
+      <p>
+        The desktop app stores an encrypted vault under the current user's
+        LocalAppData folder, using Windows DPAPI for that Windows account.
+        SpudVault does not operate a cloud vault or remote password service. It
+        does not send passwords or website history to its developer, sell data,
+        use advertising, or include telemetry. The extension temporarily handles
+        proposed or approved credentials in memory but does not persist them in
+        extension storage. It stores the local enable/disable choice in
+        Firefox's local extension storage, not sync storage. Website information
+        is stored only as part of saved login records; there is no general
+        browsing-history log.
+      </p>
+      <h2>Control and deletion</h2>
+      <p>
+        Every save and fill requires separate user confirmation. Privacy choices
+        in the extension settings allow users to disable further browser
+        handling. This does not retract data already given to a website. Users
+        can edit or delete saved accounts in the desktop app. Removing the
+        extension or uninstalling the app keeps the encrypted local vault unless
+        the user separately deletes it. A source import document, clipboard
+        contents, Windows backups, and VM snapshots are outside the extension's
+        storage and deletion controls. Copied desktop passwords are cleared
+        after 20 seconds when the clipboard still contains the copied value.
+      </p>
+      <h2>Protection and limits</h2>
+      <p>
+        No SpudVault account or cloud login is required. Windows-account
+        encryption is the current unlock boundary; there is no separate master
+        password or portable recovery feature. Other software running as the
+        same Windows user may be able to access that user's data. Browser memory
+        cannot be reliably erased immediately. SpudVault currently fills only
+        supported top-level login forms on HTTPS sites and explicitly supported
+        localhost HTTP test pages.
+      </p>
+      <h2>This public policy website</h2>
+      <p>This policy page is hosted on GitHub Pages using the calendar site's domain. Visiting it does not send your SpudVault vault, passwords, or saved logins to this site. GitHub logs visitors' IP addresses for hosting security, as described in <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">GitHub's Pages documentation</a> and <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">privacy statement</a>. This page includes no advertising, tracking scripts, password forms, or third-party analytics added by SpudVault.</p>
+      <h2>Contact</h2>
+      <p>For SpudVault privacy questions or support, contact <a href="mailto:wolfy317@hotmail.com">wolfy317@hotmail.com</a>. Do not include passwords or your vault file in a support email.</p>
+      <h2>Changes</h2>
+      <p>
+        Changes that introduce new kinds of data handling will be disclosed and,
+        where required, require new consent before those features are enabled.
+      </p>
+      <p>To change your choice, open Privacy choices from SpudVault’s Firefox extension settings.</p>
+    </main>
+  </body>
+</html>
